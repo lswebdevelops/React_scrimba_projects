@@ -1,5 +1,6 @@
 {
   "name": "tenzies",
+  "homepage": "https://github.com/lswebdevelops/React_scrimba_projects/tree/main/tenzies",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,9 +8,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b webpage_branch -d build"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "nanoid": "^5.1.5",
     "react": "^19.0.0",
     "react-confetti": "^6.4.0",
